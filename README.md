@@ -1,4 +1,4 @@
-# zbtprinter
+# zwifiprinter
 A Cordova/Phonegap driver for Zebra wifi printers
 
 This is a fork of https://github.com/michael79bxl/zbtprinter.git
@@ -24,16 +24,6 @@ window.cordova.plugins.zwifiprinter.find(
 You can send data in ZPL Zebra Programing Language:
 
 ```
-window.cordova.plugins.zbtprinter.print(address, "^XA^FO20,20^A0N,25,25^FDThis is a ZPL test.^FS^XZ",
-    function(success) {
-        alert("Zbtprinter print success: " + success);
-    }, function(fail) {
-        alert("Zbtprinter print fail:" + fail);
-        deferred.reject(fail);
-    }
-);
-```
-
 ## Install Cordova
 
 ```
