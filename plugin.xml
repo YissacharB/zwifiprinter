@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-zwifi-printer"
+    version="1.0.0">
+
+    <name>ZebraWiFiPrinter</name>
+	<description>A Cordova/Phonegap driver for Zebra wifi printers</description>
+    <license>Apache</license>
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module src="www/zwifiprinter.js" name="ZebraWiFiPrinter">
+        <clobbers target="cordova.plugins.zwifiprinter" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+
+      <config-file target="AndroidManifest.xml" parent="/*">
+
+      </config-file>
+	  <source-file src="src\android\com\github\jmier\zwifiprinter/ZebraWiFiPrinter.java" target-dir="src\android\com\github\jmier\zwifiprinter" />
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ZebraWiFiPrinter">
+                <param name="android-package" value="com.github.jmier.zwifiprinter.ZebraWiFiPrinter" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/ZSDK_ANDROID_API.jar" target-dir="libs"/>
+    </platform>
+</plugin>
