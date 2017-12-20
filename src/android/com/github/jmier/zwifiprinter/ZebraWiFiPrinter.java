@@ -1,4 +1,4 @@
-package com.github.jmier.zbtprinter;
+package com.github.jmier.zwifiprinter;
 
 import java.io.IOException;
 
