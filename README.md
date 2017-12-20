@@ -27,7 +27,7 @@ You can send data in ZPL Zebra Programing Language:
 ## Install Cordova
 
 ```
-cordova plugin add ccordova-plugin-zwifi-printer
+cordova plugin add cordova-plugin-zwifi-printer
 ```
 
 ## ZPL - Zebra Programming Language
