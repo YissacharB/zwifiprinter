@@ -3,24 +3,6 @@ A Cordova/Phonegap driver for Zebra wifi printers
 
 This is a fork of https://github.com/michael79bxl/zbtprinter.git
 
-## Usage
-You can find Zebra printer using:
-
-```
-window.cordova.plugins.zwifiprinter.find(
-    function(result) {
-        if(typeof result == 'string') {
-            address = result;
-        } else {
-            address = result.address;
-        }
-        alert('Zbtprinter: connect success: ' + address);
-    }, function(error) {
-        alert('Zbtprinter: connect fail: ' + error);
-    }
-);
-```
-
 You can send data in ZPL Zebra Programing Language:
 
 ```
