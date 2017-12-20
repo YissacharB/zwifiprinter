@@ -20,7 +20,8 @@
       <config-file target="AndroidManifest.xml" parent="/*">
 
       </config-file>
-	  <source-file src="src\android\com\github\jmier\zwifiprinter\ZebraWiFiPrinter.java" target-dir="src\android\com\github\jmier\zwifiprinter" />
+	    src/android/com/github/diegorquera/zbtprinter/ZebraBluetoothPrinter.java
+	  <source-file src="src/android/com/github/jmier/zwifiprinter/ZebraWiFiPrinter.java" target-dir="src/android/com/github/jmier/zwifiprinter" />
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="ZebraWiFiPrinter">
