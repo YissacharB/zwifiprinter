@@ -1,4 +1,4 @@
-package com.github.diegorquera.zbtprinter;
+package com.github.jmier.zbtprinter;
 
 import java.io.IOException;
 
